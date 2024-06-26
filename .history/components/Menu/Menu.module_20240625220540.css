@@ -202,6 +202,7 @@
   & > div > svg{
     width: 128px;
     height: 60px;
+    cursor: pointer;
 
     & > g > path{
       fill: var(--black);

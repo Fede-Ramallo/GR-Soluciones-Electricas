@@ -197,7 +197,6 @@
 .logo{
   width: 128px;
   height: 60px;
-  cursor: pointer;
 
   & > div > svg{
     width: 128px;
