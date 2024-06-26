@@ -1,0 +1,15 @@
+export { default as Hero } from './Hero';
+export { default as Modal } from './Modal';
+export { default as Menu } from './Menu';
+export { default as Servicios } from './Servicios';
+export { default as Slider } from './Slider';
+export { default as SliderButtons } from './SliderButtons';
+export { default as Map } from './Map';
+export { default as Arrow } from './Arrow';
+export { default as Checkbox } from './Checkbox';
+export { default as ContactForm } from './ContactForm';
+export { default as FloatingLabel } from './FloatingLabel';
+export { default as Button } from './Button';
+export { default as Select } from './Select';
+export { default as WhatsappButton } from './WhatsappButton';
+export { default as Footer } from './Footer';

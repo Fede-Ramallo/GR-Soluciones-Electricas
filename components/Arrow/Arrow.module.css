@@ -1,0 +1,33 @@
+.arrow__button {
+  width: calc(181px / var(--retina-value));
+  height: calc(181px / var(--retina-value));
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  & > svg {
+    width: calc(41px / var(--retina-value));
+    height: calc(60px / var(--retina-value));
+    display: block;
+
+    & > path {
+      fill: var(--dark);
+    }
+  }
+
+  &__alternative {
+    background-color: var(--dark);
+  }
+
+  &__disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

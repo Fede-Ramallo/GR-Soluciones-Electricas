@@ -1,0 +1,78 @@
+.hero {
+  width: 100%;
+  height: 100dvh;
+
+  &__background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    & > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    & > video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(30px / var(--retina-value));
+
+
+    @media(--large){
+      width: fit-content;
+      position: absolute;
+      align-items: unset;
+      left: 35px;
+      top: 70%;
+      height: unset;
+    }
+
+    @media(--extraExtraLarge){
+      top: 75%;
+    }
+
+    &> h1{
+      font-family: var(--font-optima);
+      font-size: calc(90px / var(--retina-value));
+      font-weight: 900;
+      width: 75%;
+      color: var(--primary);
+      line-height: 1.2;
+      text-align: center;
+
+      @media(--large){
+        font-size: 48px;
+        width: 65%;
+        line-height: 0.9;
+        letter-spacing: 2px;
+        text-align: left;
+      }
+    }
+
+    & > h4{
+      font-family: var(--font-optima);
+      width: 80%;
+      font-weight: normal;
+      font-size: calc(50px / var(--retina-value));
+      color: var(--gray);
+      text-align: center;
+
+      @media(--large){
+        width: 70%;
+        font-size: 21px;
+        text-align: left;
+      }
+    }
+  }
+}

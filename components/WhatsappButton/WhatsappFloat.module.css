@@ -1,0 +1,17 @@
+.whatsapp_button {
+  position: fixed;
+  background: none;
+  width: calc(174px / var(--retina-value));
+  height: calc(174px / var(--retina-value));
+  right: calc(52px / var(--retina-value));
+  bottom: calc(68px / var(--retina-value));
+  border-radius: 50%;
+  z-index: 20;
+
+  @media (--large) {
+    width: calc(198px / var(--retina-value));
+    height: calc(198px / var(--retina-value));
+    right: calc(50px / var(--retina-value));
+    bottom: calc(129px / var(--retina-value));
+  }
+}

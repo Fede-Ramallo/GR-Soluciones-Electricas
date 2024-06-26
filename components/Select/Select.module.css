@@ -1,0 +1,51 @@
+.input_options {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: calc(30px / var(--retina-value));
+  background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 451.8 257.6' width='15' height='15' xmlns='http://www.w3.org/2000/svg'><g><path fill='dark' d='M225.9 255.9c-8 0-16-3.1-22.1-9.1L12 55C-.2 42.8-.2 23 12 10.8s32-12.2 44.2 0l169.7 169.7L395.7 10.8c12.2-12.2 32-12.2 44.2 0s12.2 32 0 44.2L248 246.8c-6.1 6.1-14.1 9.1-22.1 9.1z' /></g></svg>")
+    no-repeat;
+  background-position: right 5px top 50%;
+  margin: calc(40px / var(--retina-value)) 0;
+
+  @media (--large) {
+    background-position: right 16px top 50%;
+    /* width: 90%; */
+  }
+
+  input,
+  select {
+    font-family: var(--font-optima);
+    width: 100%;
+    height: 35px;
+    color: var(--dark);
+    outline: 0;
+    /* border: 1px solid var(--brown); */
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    -webkit-appearance: none;
+    @media (--large) {
+      height: 45px;
+    }
+  }
+
+  select {
+    border-bottom: 1px solid var(--black-50);
+    position: relative;
+    font-size: calc(43px / var(--retina-value));
+    font-weight: 300;
+    border-radius: 0;
+    @media (--large) {
+      padding: 10px 0;
+      font-size: 18px;
+    }
+    & > option.hidden_option {
+      display: none;
+    }
+  }
+  & > option {
+    font-family: var(--font-optima);
+    color: var(--dark);
+  }
+}

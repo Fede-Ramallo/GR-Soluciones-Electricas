@@ -1,0 +1,94 @@
+.floating_label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  -webkit-appearance: none;
+  margin-bottom: calc(30px / var(--retina-value));
+
+  input,
+  select {
+    width: 100%;
+    height: 35px;
+    font-family: var(--font-mulish);
+    color: var(--dark);
+    outline: 0;
+    background: transparent;
+    font-size: 16px;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    border-bottom: 1px solid var(--black);
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+    @media (--large) {
+      padding: 20px 0px 20px 0px;
+    }
+  }
+
+  &input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &:focus-within label {
+    transform: translate(0, -10px) scale(0.7);
+  }
+
+  &.input_name {
+    position: relative;
+    width: 100%;
+  }
+  &.input_lastname {
+    position: relative;
+    width: 100%;
+  }
+  &.input_data {
+    position: relative;
+    width: 100%;
+  }
+  &.input_phone {
+    position: relative;
+    width: 100%;
+    -moz-appearance: textfield;
+  }
+}
+
+.error_message {
+  font-size: 12px;
+  color: red;
+  position: relative;
+  top: 1px;
+  left: 0px;
+}
+
+.label {
+  font-family: var(--font-mulish);
+  font-size: calc(41px / var(--retina-value));
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 35px;
+  letter-spacing: normal;
+  text-align: left;
+  color: var(--dark);
+  pointer-events: none;
+  position: absolute;
+  transform: translate(0px, 0px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+
+  @media (--large) {
+    font-size: 18px;
+    transform: translate(0px, 5px) scale(1);
+  }
+
+  &__active {
+    transform: translate(0, -15px) scale(0.7);
+
+    @media (--large) {
+      transform: translate(0, -15) scale(0.7);
+    }
+  }
+}

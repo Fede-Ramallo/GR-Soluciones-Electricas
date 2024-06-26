@@ -1,0 +1,142 @@
+.slider {
+  text-align: center;
+  font-stretch: normal;
+  letter-spacing: normal;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  background-color: var(--gray);
+  padding: calc(90px / var(--retina-value)) 0;
+
+  @media (--large) {
+    padding: 40px 0;
+  }
+
+  & > h2 {
+    font-family: var(--font-optima);
+    font-size: calc(90px / var(--retina-value));
+    font-weight: 600;
+    color: var(--dark);
+    letter-spacing: 2px;
+    line-height: 1;
+
+    @media (--large) {
+      font-size: 41px;
+      letter-spacing: 3px;
+    }
+  }
+
+  & > h4 {
+    color: var(--dark-grey);
+    font-family: var(--font-mulish);
+    font-size: calc(50px / var(--retina-value));
+    font-weight: normal;
+    letter-spacing: -0.3px;
+
+    @media (--large) {
+      font-size: 18px;
+      letter-spacing: -1px;
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 400px;
+  padding-top: calc(100px / var(--retina-value));
+  position: initial;
+  display: flex;
+  justify-content: center;
+
+  @media (--large) {
+    max-width: 1000px;
+    height: 320px;
+  }
+
+  @media(--extraExtraLarge){
+    max-width: 1150px;
+    height: 400px;
+  }
+
+  @media (--ultraLarge) {
+    max-width: 1500px;
+    height: 450px;
+  }
+
+  :global {
+    .swiper-pagination {
+      z-index: 1;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+
+    @media (--large) {
+      border-radius: 10px;
+      transition: box-shadow 0.3s;
+
+      &:hover {
+        box-shadow: 0 0 11px rgba(33, 33, 33, 0.4);
+      }
+    }
+
+    &__item {
+      width: calc(900px / var(--retina-value));
+      height: calc(900px / var(--retina-value));
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+
+      @media (--extraLarge) {
+        width: 100%;
+        height: 300px;
+      }
+
+      @media(--ultraLarge){
+        height: 368px;
+      }
+      .imageContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        & > img{
+          height: auto !important;
+        }
+      }
+    }
+
+    & p {
+      width: 100%;
+      position: absolute;
+      bottom: calc(37px / var(--retina-value));
+
+      font-family: var(--font-optima);
+      font-size: calc(54px / var(--retina-value));
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: italic;
+      line-height: calc(50px / var(--retina-value));
+      letter-spacing: normal;
+      text-align: center;
+      color: var(--white);
+
+      @media (--large) {
+        line-height: 23px;
+        font-size: 25px;
+      }
+    }
+  }
+}

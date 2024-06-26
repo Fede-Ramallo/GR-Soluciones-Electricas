@@ -1,0 +1,60 @@
+.button {
+  width: fit-content;
+  max-width: calc(492px / var(--retina-value));
+  height: calc(111px / var(--retina-value));
+  padding: calc(36px / var(--retina-value)) calc(50px / var(--retina-value));
+  border-radius: calc(55.5px / var(--retina-value));
+  background-color: var(--primary);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+
+  @media (--large) {
+    width: 100%;
+    max-width: 206px;
+    height: 44px;
+    border-radius: 21.8px;
+  }
+
+  & > span {
+    text-transform: uppercase;
+    font-size: calc(44px / var(--retina-value));
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: calc(-0.88px / var(--retina-value));
+    text-align: center;
+    color: var(--white);
+    display: block;
+
+    @media (--large) {
+      font-size: 17px;
+      line-height: 1.21;
+    }
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--dark);
+    }
+  }
+
+  /** secondary */
+  &.secondary {
+    background-color: var(--dark);
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: var(--primary);
+
+        & > span {
+          color: var(--dark);
+        }
+      }
+    }
+  }
+}
