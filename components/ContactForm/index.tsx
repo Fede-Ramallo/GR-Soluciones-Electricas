@@ -50,18 +50,20 @@ const SocialIcon: FC<SocialItemType> = ({ id, url, icon, gaevent, caption }) => 
   );
 };
 
-const ContactForm: FC<ContactFormProps> = ({ phone, email, direction, social }) => {
+const ContactForm: FC<ContactFormProps> = ({ phone, email, social }) => {
   const { current } = useModalState();
   const dispatch = useModalDispatch();
-  
+
   const contact = [
     { value: 'default', label: 'Interés' },
     { value: 'presupuesto', label: 'Presupuesto' },
+    { value: 'emergencia', label: 'Emergencia' },
     { value: 'consulta', label: 'Cónsulta' },
-    { value: 'otro', label: 'Otro' },
+    { value: 'otro', label: 'Otro' }
   ];
 
-  const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
+  const phoneRegExp =
+    /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
 
   const formik = useFormik<FormValues>({
     initialValues: {
@@ -157,7 +159,7 @@ const ContactForm: FC<ContactFormProps> = ({ phone, email, direction, social }) 
               rel="noopener noreferrer">
               {email}
             </a>
-            <p dangerouslySetInnerHTML={{ __html: direction }} />
+            {/* <p dangerouslySetInnerHTML={{ __html: direction }} /> */}
             <motion.ul className={s.social__list}>
               {social && social.map((item) => <SocialIcon key={item.id} {...item} />)}
             </motion.ul>
@@ -259,8 +261,8 @@ const ContactForm: FC<ContactFormProps> = ({ phone, email, direction, social }) 
           <Modal key="modal-form">
             <div className={s.contact_modalInfo}>
               <p>
-                <strong>Gracias!</strong> los datos se enviaron correctamente. Nos pondremos
-                en contacto a la brevedad.
+                <strong>Gracias!</strong> los datos se enviaron correctamente. Nos pondremos en
+                contacto a la brevedad.
               </p>
             </div>
           </Modal>
