@@ -16,7 +16,10 @@ const Footer = () => {
           </nav>
           <div className={s.footer__content__copy}>
             <p>Desarrollado por</p>
-            <Link href="https://www.linkedin.com/in/federico-ramallo-front-end-developer/" title="#" target="_blank">
+            <Link
+              href="https://www.linkedin.com/in/federico-ramallo-front-end-developer/"
+              title="#"
+              target="_blank">
               Federico Ramallo
             </Link>
           </div>

@@ -13,15 +13,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       secure: false, // true para 465, false para otros puertos
       auth: {
         user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
+        pass: process.env.EMAIL_PASS
+      }
     });
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: 'grsoluciones.electricas@gmail.com', // Cambia esto al correo deseado
       subject: `Contacto de: ${contact}`,
-      text: `Nombre: ${name} ${lastname}\nCiudad: ${city}\nTeléfono: ${phone}\nEmail: ${email}\nTipo de contacto: ${contact}`,
+      text: `Nombre: ${name} ${lastname}\nCiudad: ${city}\nTeléfono: ${phone}\nEmail: ${email}\nTipo de contacto: ${contact}`
     };
 
     try {

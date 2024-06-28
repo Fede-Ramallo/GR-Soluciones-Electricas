@@ -7,7 +7,7 @@ const WhatsAppButton: FC = () => {
   const handleClick = () => {
     const link = 'https://wa.me/5493513967959';
     window.open(link, '_blank');
-    
+
     logEvent({
       eventName: '02_USER_PRESS_WHATSAPP_BUTTON'
     });

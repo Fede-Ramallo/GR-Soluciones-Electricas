@@ -47,7 +47,7 @@ const Modal: FC<ModalProps> = ({ children }) => {
 
   return (
     <>
-      <AnimatePresence initial={false} mode='wait' onExitComplete={() => null}>
+      <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
         {state.visible && <ModalBody>{children}</ModalBody>}
       </AnimatePresence>
     </>

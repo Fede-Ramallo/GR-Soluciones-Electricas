@@ -39,7 +39,7 @@ export interface ServiciosItems {
   label: string;
 }
 
-export interface ServiciosProps{
+export interface ServiciosProps {
   items: ServiciosItems[];
 }
 
@@ -117,7 +117,7 @@ export type ContactType = {
   direction: string;
   social: SocialItemType[];
 };
- 
+
 // Campaign
 export interface Campaign {
   utm_source?: string;

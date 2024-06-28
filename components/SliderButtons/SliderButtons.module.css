@@ -15,8 +15,8 @@
       left: 0px;
     }
 
-    @media(--extraExtraLarge){
-      left: 50px
+    @media (--extraExtraLarge) {
+      left: 50px;
     }
 
     @media (--ultraLarge) {
@@ -30,11 +30,11 @@
       right: 0px;
     }
 
-    @media(--extraExtraLarge){
-      right: 50px
+    @media (--extraExtraLarge) {
+      right: 50px;
     }
 
-    @media(--ultraLarge){
+    @media (--ultraLarge) {
       top: 300px;
       right: 0px;
     }

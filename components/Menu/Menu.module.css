@@ -169,41 +169,41 @@
   color: var(--gray) !important;
 }
 
-.scrolled{
-  &> button  > div > div > svg > path{
+.scrolled {
+  & > button > div > div > svg > path {
     fill: var(--black);
 
-    &:hover{
+    &:hover {
       fill: var(--dark-grey);
     }
   }
-  & > div > ul > li  {
+  & > div > ul > li {
     color: var(--black);
 
-    &:hover{
+    &:hover {
       color: var(--dark-grey);
     }
   }
 
-  & > div > div > svg > g > path{
+  & > div > div > svg > g > path {
     fill: var(--primary);
   }
 
-  & div > div > div > svg > g > path{
+  & div > div > div > svg > g > path {
     fill: var(--primary);
   }
 }
 
-.logo{
+.logo {
   width: 128px;
   height: 60px;
   cursor: pointer;
 
-  & > div > svg{
+  & > div > svg {
     width: 128px;
     height: 60px;
 
-    & > g > path{
+    & > g > path {
       fill: var(--black);
     }
   }

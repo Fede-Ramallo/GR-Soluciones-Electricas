@@ -1,11 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import { Hero, Menu, Servicios, Slider, Map, ContactForm, WhatsappButton, Footer } from '@/components';
+import {
+  Hero,
+  Menu,
+  Servicios,
+  Slider,
+  Map,
+  ContactForm,
+  WhatsappButton,
+  Footer
+} from '@/components';
 import { dataset } from '@/lib/dataset';
 import useDeviceSize from '@/hooks/useDeviceSize';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   const arrayWidth = useDeviceSize();
@@ -49,7 +55,6 @@ export default function Home() {
           subtitle={dataset.Map.subtitle}
         />
 
-        {/* TODO: CAMBIAR FONT-FAMILY COMO CORRESPONDA EN CONTACTFORM, BUTTON, FLOATING LABEL Y MODAL */}
         <div ref={contactRef}>{dataset.Contact && <ContactForm {...dataset.Contact} />}</div>
         <WhatsappButton />
         <Footer />

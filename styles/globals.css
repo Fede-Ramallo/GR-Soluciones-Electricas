@@ -4,18 +4,16 @@
   --white: #ffffff;
   --black: #000000;
   --primary: #fdcb2e;
-  --dark-yellow: #CFA626;
-  --bright-yellow: #FFC100;
+  --dark-yellow: #cfa626;
+  --bright-yellow: #ffc100;
   --dark: #2b2b2b;
   --black-50: rgba(0, 0, 0, 0.5);
   --dark-grey: #353535;
   --gray: #eef0f1;
   --retina-value: 3;
 
-
   /* Fonts */
   --font-arial-text: 'Arial';
-
 
   /* otras variables */
   --header-height: calc(180px / var(--retina-value));

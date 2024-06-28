@@ -20,14 +20,14 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-        <style jsx global>
-          {`
-            :root {
-              --font-optima: ${Optima.style.fontFamily};
-              --font-mulish: ${Mulish.style.fontFamily};
-            }
-          `}
-        </style>
+      <style jsx global>
+        {`
+          :root {
+            --font-optima: ${Optima.style.fontFamily};
+            --font-mulish: ${Mulish.style.fontFamily};
+          }
+        `}
+      </style>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
         <title>{AppData.title}</title>

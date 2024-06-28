@@ -141,7 +141,7 @@ const Menu: FC<MenuType> = ({ Items, showList }) => {
           exit="exit"
           className={classNameDesktop}>
           <div className={s.headerDesktop__content}>
-              <ReactSVG className={s.logo} src="/icons/logo.svg" />
+            <ReactSVG className={s.logo} src="/icons/logo.svg" />
             {showList && (
               <ul className={s.headerDesktop__lista}>
                 {Items.map((item) => (

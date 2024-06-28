@@ -76,13 +76,8 @@ function getAllUrlParams(url: string) {
 
         // if it's an indexed array e.g. colors[2]
         if (paramName.match(/\[\d+\]$/)) {
-          // get the index value and add the entry at the appropriate position 
-
-
+          // get the index value and add the entry at the appropriate position
           // COMENTADO TIRA ERRORES!!
-
-
-          
           // var index = /\[(\d+)\]/.exec(paramName)[1];
           // obj[key][index] = paramValue;
         } else {

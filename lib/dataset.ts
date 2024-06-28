@@ -8,11 +8,12 @@ export const dataset: DataSetType = {
   },
   Menu: {
     Items: [
-      {label: "Inicio", href: "#inicio", id: 1},
-      {label: "Servicios", href: "#servicios", id: 2},
-      {label: "Trabajos Realizados", href: "#slider", id: 3},
-      {label: "Ubicación", href: "#map", id:4},
-      {label: "Contacto", href: "#contacto", id: 5}],
+      { label: 'Inicio', href: '#inicio', id: 1 },
+      { label: 'Servicios', href: '#servicios', id: 2 },
+      { label: 'Trabajos Realizados', href: '#slider', id: 3 },
+      { label: 'Ubicación', href: '#map', id: 4 },
+      { label: 'Contacto', href: '#contacto', id: 5 }
+    ],
     showList: true
   },
   Hero: {
@@ -41,22 +42,60 @@ export const dataset: DataSetType = {
   },
   Servicios: {
     items: [
-      {id: 'iluminacion', svg: '/icons/iluminacion.svg', label: 'Iluminación Doméstica'},
-      {id: 'reparacion', svg: '/icons/reparacion.svg', label: 'Reparaciones Eléctricas'},
-      {id: 'instalacion', svg: '/icons/tomacorrientes.svg', label: 'Instalación de Tomacorrientes'},
-      {id: 'actualizacion', svg: '/icons/tablero.svg', label: 'Actualización de Tableros'},
-      {id: 'certificaciones', svg: '/icons/certificaciones.svg', label: 'Certificaciones Eléctricas'},
-      {id: 'mantenimiento', svg: '/icons/mantenimiento.svg', label: 'Mantenimiento Preventivo'},
+      { id: 'iluminacion', svg: '/icons/iluminacion.svg', label: 'Iluminación Doméstica' },
+      { id: 'reparacion', svg: '/icons/reparacion.svg', label: 'Reparaciones Eléctricas' },
+      {
+        id: 'instalacion',
+        svg: '/icons/tomacorrientes.svg',
+        label: 'Instalación de Tomacorrientes'
+      },
+      { id: 'actualizacion', svg: '/icons/tablero.svg', label: 'Actualización de Tableros' },
+      {
+        id: 'certificaciones',
+        svg: '/icons/certificaciones.svg',
+        label: 'Certificaciones Eléctricas'
+      },
+      { id: 'mantenimiento', svg: '/icons/mantenimiento.svg', label: 'Mantenimiento Preventivo' }
     ]
   },
   Slider: {
     items: [
-      { id: 1, image: '/images/trabajo1.jpg', imageMobile: "/images/trabajo1Mobile.jpg", alt: 'Image' },
-      { id: 2, image: '/images/trabajo2.jpg', imageMobile: "/images/trabajo2Mobile.jpg",alt: 'Image' },
-      { id: 3, image: '/images/trabajo3.jpg',imageMobile: "/images/trabajo3Mobile.jpg", alt: 'Image' },
-      { id: 4, image: '/images/trabajo4.jpg', imageMobile: "/images/trabajo4Mobile.jpg",alt: 'Image' },
-      { id: 5, image: '/images/trabajo5.jpg', imageMobile: "/images/trabajo5Mobile.jpg",alt: 'Image' },
-      { id: 6, image: '/images/trabajo6.jpg', imageMobile: "/images/trabajo6Mobile.jpg",alt: 'Image' },
+      {
+        id: 1,
+        image: '/images/trabajo1.jpg',
+        imageMobile: '/images/trabajo1Mobile.jpg',
+        alt: 'Image'
+      },
+      {
+        id: 2,
+        image: '/images/trabajo2.jpg',
+        imageMobile: '/images/trabajo2Mobile.jpg',
+        alt: 'Image'
+      },
+      {
+        id: 3,
+        image: '/images/trabajo3.jpg',
+        imageMobile: '/images/trabajo3Mobile.jpg',
+        alt: 'Image'
+      },
+      {
+        id: 4,
+        image: '/images/trabajo4.jpg',
+        imageMobile: '/images/trabajo4Mobile.jpg',
+        alt: 'Image'
+      },
+      {
+        id: 5,
+        image: '/images/trabajo5.jpg',
+        imageMobile: '/images/trabajo5Mobile.jpg',
+        alt: 'Image'
+      },
+      {
+        id: 6,
+        image: '/images/trabajo6.jpg',
+        imageMobile: '/images/trabajo6Mobile.jpg',
+        alt: 'Image'
+      }
     ]
   },
   Contact: {
